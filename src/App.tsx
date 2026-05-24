@@ -21,12 +21,26 @@ function App() {
 
 
 
+  //Question 1 ######################################################
+  let Q1Correct = () => {
+    alert("Correct Answer")
+    setScore (score + 1)
+  }
+
+  let Q1Wrong = () => {
+    alert("Wrong Answer")
+  }
+  //Question 1 ######################################################
+
+
+
   return (
     <>
       <div className="grid justify-center my-7">
         <p className='font-bold text-3xl my-4'>Score is: {score}</p>
 
-        <Question1 />
+        <Question1 correctAnswer={Q1Correct} wrongAnswer={Q1Wrong}/>
+        
         <Question2 />
         <Question3 />
         <Question4 />

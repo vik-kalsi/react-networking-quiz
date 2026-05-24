@@ -1,9 +1,10 @@
 //import React from 'react'
 
 
-function Question1() {
+function Question1(
+  { correctAnswer, wrongAnswer }:
+  { correctAnswer: () => void; wrongAnswer: () => void }) {
     
-  
   return (
     <>
 
@@ -15,10 +16,10 @@ function Question1() {
 
 
         <div className='grid mt-3 gap-3'>
-          <button className='border-2 p-1 font-bold'>Dynamic Network System</button>
-          <button className='border-2 p-1 font-bold'>Domain Name System *</button>
-          <button className='border-2 p-1 font-bold'>Digital Naming Service</button>
-          <button className='border-2 p-1 font-bold'>Data Network Server</button>
+          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Dynamic Network System</button>
+          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>Domain Name System *</button>
+          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Digital Naming Service</button>
+          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Data Network Server</button>
         </div>
 
       </div>
