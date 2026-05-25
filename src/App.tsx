@@ -218,8 +218,8 @@ function App() {
 
   return (
     <>
-      <div className="grid justify-center my-7">
-        <p className='font-bold text-3xl my-4'>Score is: {score}</p>
+      <div className="grid justify-center my-7 mx-4">
+        <p className='font-bold text-3xl my-4 mx-4'>Score is: {score}</p>
 
         <Question1 correctAnswer={Q1Correct} wrongAnswer={Q1Wrong}/>
         <Question2 correctAnswer={Q2Correct} wrongAnswer={Q2Wrong}/>
