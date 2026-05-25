@@ -14,7 +14,7 @@ function Question12({ correctAnswer, wrongAnswer }:
 
 
         <div className='grid mt-3 gap-3'>
-          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>Local Area Network *</button>
+          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>Local Area Network</button>
           <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Large Access Node</button>
           <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Logical Area Network</button>
           <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Linked Application Network</button>
