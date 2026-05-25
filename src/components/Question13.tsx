@@ -1,5 +1,6 @@
 
-function Question13() {
+function Question13({ correctAnswer, wrongAnswer }:
+  { correctAnswer: () => void; wrongAnswer: () => void }) {
     
   
   return (
@@ -13,10 +14,10 @@ function Question13() {
 
 
         <div className='grid mt-3 gap-3'>
-          <button className='border-2 p-1 font-bold'>Telnet</button>
-          <button className='border-2 p-1 font-bold'>SSH *</button>
-          <button className='border-2 p-1 font-bold'>FTP</button>
-          <button className='border-2 p-1 font-bold'>POP3</button>
+          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Telnet</button>
+          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>SSH</button>
+          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>FTP</button>
+          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>POP3</button>
         </div>
 
       </div>

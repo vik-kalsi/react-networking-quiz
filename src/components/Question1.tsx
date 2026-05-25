@@ -15,7 +15,7 @@ function Question1(
 
         <div className='grid mt-3 gap-3'>
           <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Dynamic Network System</button>
-          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>Domain Name System *</button>
+          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>Domain Name System</button>
           <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Digital Naming Service</button>
           <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Data Network Server</button>
         </div>

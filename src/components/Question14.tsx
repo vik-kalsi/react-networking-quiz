@@ -1,5 +1,6 @@
 
-function Question14() {
+function Question14({ correctAnswer, wrongAnswer }:
+  { correctAnswer: () => void; wrongAnswer: () => void }) {
     
   
   return (
@@ -13,10 +14,10 @@ function Question14() {
 
 
         <div className='grid mt-3 gap-3'>
-          <button className='border-2 p-1 font-bold'>Physical Layer</button>
-          <button className='border-2 p-1 font-bold'>Data Link Layer</button>
-          <button className='border-2 p-1 font-bold'>Network Layer *</button>
-          <button className='border-2 p-1 font-bold'>Application Layer</button>
+          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Physical Layer</button>
+          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Data Link Layer</button>
+          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>Network Layer</button>
+          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Application Layer</button>
         </div>
 
       </div>

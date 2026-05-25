@@ -1,5 +1,6 @@
 
-function Question10() {
+function Question10({ correctAnswer, wrongAnswer }:
+  { correctAnswer: () => void; wrongAnswer: () => void }) {
     
   
   return (
@@ -13,10 +14,10 @@ function Question10() {
 
 
         <div className='grid mt-3 gap-3'>
-          <button className='border-2 p-1 font-bold'>22</button>
-          <button className='border-2 p-1 font-bold'>53</button>
-          <button className='border-2 p-1 font-bold'>110</button>
-          <button className='border-2 p-1 font-bold'>443 *</button>
+          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>22</button>
+          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>53</button>
+          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>110</button>
+          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>443</button>
         </div>
 
       </div>
