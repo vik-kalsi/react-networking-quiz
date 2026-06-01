@@ -42,10 +42,14 @@ function App() {
   let Q1Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion1(false)
+    setShowQuestion2(true)
   }
 
   let Q1Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion1(false)
+    setShowQuestion2(true)
   }
   //Question 1 #######################################################
 
@@ -55,10 +59,14 @@ function App() {
   let Q2Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion2(false)
+    setShowQuestion3(true)
   }
 
   let Q2Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion2(false)
+    setShowQuestion3(true)
   }
   //Question 2 #######################################################
 
@@ -68,10 +76,14 @@ function App() {
   let Q3Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion3(false)
+    setShowQuestion4(true)
   }
 
   let Q3Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion3(false)
+    setShowQuestion4(true)
   }
   //Question 3 #######################################################
 
@@ -81,10 +93,14 @@ function App() {
   let Q4Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion4(false)
+    setShowQuestion5(true)
   }
 
   let Q4Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion4(false)
+    setShowQuestion5(true)
   }
   //Question 4 #######################################################
 
@@ -94,10 +110,14 @@ function App() {
   let Q5Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion5(false)
+    setShowQuestion6(true)
   }
 
   let Q5Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion5(false)
+    setShowQuestion6(true)
   }
   //Question 5 #######################################################
 
@@ -107,10 +127,14 @@ function App() {
   let Q6Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion6(false)
+    setShowQuestion7(true)
   }
 
   let Q6Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion6(false)
+    setShowQuestion7(true)
   }
   //Question 6 #######################################################
 
@@ -121,10 +145,14 @@ function App() {
   let Q7Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion7(false)
+    setShowQuestion8(true)
   }
 
   let Q7Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion7(false)
+    setShowQuestion8(true)
   }
   //Question 7 #######################################################
 
@@ -134,10 +162,14 @@ function App() {
   let Q8Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion8(false)
+    setShowQuestion9(true)
   }
 
   let Q8Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion8(false)
+    setShowQuestion9(true)
   }
   //Question 8 #######################################################
 
@@ -147,10 +179,14 @@ function App() {
   let Q9Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion9(false)
+    setShowQuestion10(true)
   }
 
   let Q9Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion9(false)
+    setShowQuestion10(true)
   }
   //Question 9 #######################################################
 
@@ -160,10 +196,14 @@ function App() {
   let Q10Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion10(false)
+    setShowQuestion11(true)
   }
 
   let Q10Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion10(false)
+    setShowQuestion11(true)
   }
   //Question 10 #######################################################
 
@@ -172,10 +212,14 @@ function App() {
   let Q11Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion11(false)
+    setShowQuestion12(true)
   }
 
   let Q11Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion11(false)
+    setShowQuestion12(true)
   }
   //Question 11 #######################################################
 
@@ -184,10 +228,14 @@ function App() {
   let Q12Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion12(false)
+    setShowQuestion13(true)
   }
 
   let Q12Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion12(false)
+    setShowQuestion13(true)
   }
   //Question 12 #######################################################
 
@@ -197,10 +245,14 @@ function App() {
   let Q13Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion13(false)
+    setShowQuestion14(true)
   }
 
   let Q13Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion13(false)
+    setShowQuestion14(true)
   }
   //Question 13 #######################################################
 
@@ -210,10 +262,14 @@ function App() {
   let Q14Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion14(false)
+    setShowQuestion15(true)
   }
 
   let Q14Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion14(false)
+    setShowQuestion15(true)
   }
   //Question 14 #######################################################
 
@@ -223,10 +279,14 @@ function App() {
   let Q15Correct = () => {
     alert("Correct Answer")
     setScore (score + 1)
+    setShowQuestion15(false)
+    //setShowQuestion15(true) ********************************************
   }
 
   let Q15Wrong = () => {
     alert("Wrong Answer")
+    setShowQuestion15(false)
+    //setShowQuestion15(true) ********************************************
   }
   //Question 15 #######################################################
 
