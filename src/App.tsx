@@ -19,6 +19,23 @@ import Question15 from './components/Question15.tsx'
 function App() {
   const [score, setScore] = useState(0);
 
+  const [showQuestion1, setShowQuestion1] = useState(true)
+  const [showQuestion2, setShowQuestion2] = useState(false)
+  const [showQuestion3, setShowQuestion3] = useState(false)
+  const [showQuestion4, setShowQuestion4] = useState(false)
+  const [showQuestion5, setShowQuestion5] = useState(false)
+  const [showQuestion6, setShowQuestion6] = useState(false)
+  const [showQuestion7, setShowQuestion7] = useState(false)
+  const [showQuestion8, setShowQuestion8] = useState(false)
+  const [showQuestion9, setShowQuestion9] = useState(false)
+  const [showQuestion10, setShowQuestion10] = useState(false)
+  const [showQuestion11, setShowQuestion11] = useState(false)
+  const [showQuestion12, setShowQuestion12] = useState(false)
+  const [showQuestion13, setShowQuestion13] = useState(false)
+  const [showQuestion14, setShowQuestion14] = useState(false)
+  const [showQuestion15, setShowQuestion15] = useState(false)
+
+
 
 
   //Question 1 ######################################################
@@ -221,21 +238,21 @@ function App() {
       <div className="grid justify-center my-7 mx-4">
         <p className='font-bold text-3xl my-4 mx-4'>Score is: {score}</p>
 
-        <Question1 correctAnswer={Q1Correct} wrongAnswer={Q1Wrong}/>
-        <Question2 correctAnswer={Q2Correct} wrongAnswer={Q2Wrong}/>
-        <Question3 correctAnswer={Q3Correct} wrongAnswer={Q3Wrong}/>
-        <Question4 correctAnswer={Q4Correct} wrongAnswer={Q4Wrong}/>
-        <Question5 correctAnswer={Q5Correct} wrongAnswer={Q5Wrong}/>
-        <Question6 correctAnswer={Q6Correct} wrongAnswer={Q6Wrong}/>
-        <Question7 correctAnswer={Q7Correct} wrongAnswer={Q7Wrong}/>
-        <Question8 correctAnswer={Q8Correct} wrongAnswer={Q8Wrong}/>
-        <Question9 correctAnswer={Q9Correct} wrongAnswer={Q9Wrong}/>
-        <Question10 correctAnswer={Q10Correct} wrongAnswer={Q10Wrong}/>
-        <Question11 correctAnswer={Q11Correct} wrongAnswer={Q11Wrong}/>
-        <Question12 correctAnswer={Q12Correct} wrongAnswer={Q12Wrong}/>
-        <Question13 correctAnswer={Q13Correct} wrongAnswer={Q13Wrong}/>
-        <Question14 correctAnswer={Q14Correct} wrongAnswer={Q14Wrong}/>
-        <Question15 correctAnswer={Q15Correct} wrongAnswer={Q15Wrong}/>
+        {showQuestion1 && <Question1 correctAnswer={Q1Correct} wrongAnswer={Q1Wrong}/> }
+        {showQuestion2 && <Question2 correctAnswer={Q2Correct} wrongAnswer={Q2Wrong}/> }
+        {showQuestion3 && <Question3 correctAnswer={Q3Correct} wrongAnswer={Q3Wrong}/> }
+        {showQuestion4 && <Question4 correctAnswer={Q4Correct} wrongAnswer={Q4Wrong}/> }
+        {showQuestion5 && <Question5 correctAnswer={Q5Correct} wrongAnswer={Q5Wrong}/> }
+        {showQuestion6 && <Question6 correctAnswer={Q6Correct} wrongAnswer={Q6Wrong}/> }
+        {showQuestion7 && <Question7 correctAnswer={Q7Correct} wrongAnswer={Q7Wrong}/> }
+        {showQuestion8 && <Question8 correctAnswer={Q8Correct} wrongAnswer={Q8Wrong}/> }
+        {showQuestion9 && <Question9 correctAnswer={Q9Correct} wrongAnswer={Q9Wrong}/> }
+        {showQuestion10 && <Question10 correctAnswer={Q10Correct} wrongAnswer={Q10Wrong}/> }
+        {showQuestion11 && <Question11 correctAnswer={Q11Correct} wrongAnswer={Q11Wrong}/> }
+        {showQuestion12 && <Question12 correctAnswer={Q12Correct} wrongAnswer={Q12Wrong}/> }
+        {showQuestion13 && <Question13 correctAnswer={Q13Correct} wrongAnswer={Q13Wrong}/> }
+        {showQuestion14 && <Question14 correctAnswer={Q14Correct} wrongAnswer={Q14Wrong}/> }
+        {showQuestion15 && <Question15 correctAnswer={Q15Correct} wrongAnswer={Q15Wrong}/> }
         
 
 
