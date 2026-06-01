@@ -13,11 +13,11 @@ function Question12({ correctAnswer, wrongAnswer }:
         </div>
 
 
-        <div className='grid mt-3 gap-3'>
-          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>Local Area Network</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Large Access Node</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Logical Area Network</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Linked Application Network</button>
+        <div className='grid mt-3 gap-4'>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={correctAnswer}>Local Area Network</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Large Access Node</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Logical Area Network</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Linked Application Network</button>
         </div>
 
       </div>

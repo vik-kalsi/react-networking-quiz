@@ -13,11 +13,11 @@ function Question5({ correctAnswer, wrongAnswer }:
         </div>
 
 
-        <div className='grid mt-3 gap-3'>
-          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>Internet Protocol</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Internal Process</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Integrated Program</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Internet Provider</button>
+        <div className='grid mt-3 gap-4'>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={correctAnswer}>Internet Protocol</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Internal Process</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Integrated Program</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Internet Provider</button>
         </div>
 
       </div>

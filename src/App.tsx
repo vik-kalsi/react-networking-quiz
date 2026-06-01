@@ -314,8 +314,6 @@ function App() {
         {showQuestion14 && <Question14 correctAnswer={Q14Correct} wrongAnswer={Q14Wrong}/> }
         {showQuestion15 && <Question15 correctAnswer={Q15Correct} wrongAnswer={Q15Wrong}/> }
         
-
-
       </div>
       
     </>

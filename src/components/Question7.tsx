@@ -13,11 +13,11 @@ function Question7({ correctAnswer, wrongAnswer }:
         </div>
 
 
-        <div className='grid mt-3 gap-3'>
-          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>SMTP</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>SNMP</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>DHCP</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>FTP</button>
+        <div className='grid mt-3 gap-4'>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={correctAnswer}>SMTP</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>SNMP</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>DHCP</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>FTP</button>
         </div>
 
       </div>

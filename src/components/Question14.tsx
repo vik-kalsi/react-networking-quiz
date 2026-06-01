@@ -13,11 +13,11 @@ function Question14({ correctAnswer, wrongAnswer }:
         </div>
 
 
-        <div className='grid mt-3 gap-3'>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Physical Layer</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Data Link Layer</button>
-          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>Network Layer</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Application Layer</button>
+        <div className='grid mt-3 gap-4'>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Physical Layer</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Data Link Layer</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={correctAnswer}>Network Layer</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Application Layer</button>
         </div>
 
       </div>

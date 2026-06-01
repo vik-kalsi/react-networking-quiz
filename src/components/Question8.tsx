@@ -13,11 +13,11 @@ function Question8({ correctAnswer, wrongAnswer }:
         </div>
 
 
-        <div className='grid mt-3 gap-3'>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Increase internet speed</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Store files</button>
-          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>Monitor and filter network traffic</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Assign IP addresses</button>
+        <div className='grid mt-3 gap-4'>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Increase internet speed</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Store files</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={correctAnswer}>Monitor and filter network traffic</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Assign IP addresses</button>
         </div>
 
       </div>

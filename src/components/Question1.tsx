@@ -13,11 +13,11 @@ function Question1(
         </div>
 
 
-        <div className='grid mt-3 gap-3'>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Dynamic Network System</button>
-          <button className='border-2 p-1 font-bold' onClick={correctAnswer}>Domain Name System</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Digital Naming Service</button>
-          <button className='border-2 p-1 font-bold' onClick={wrongAnswer}>Data Network Server</button>
+        <div className='grid mt-3 gap-4'>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Dynamic Network System</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={correctAnswer}>Domain Name System</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Digital Naming Service</button>
+          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>Data Network Server</button>
         </div>
 
       </div>
