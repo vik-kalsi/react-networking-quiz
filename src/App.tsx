@@ -301,7 +301,7 @@ function App() {
   return (
     <>
       <div className="grid justify-center my-7 mx-4">
-        {showScore && <p className='font-bold text-3xl my-4 mx-4'>Score is: {score}</p> }
+        {showScore && <p className='font-bold text-3xl my-4 mx-4 md:mb-18 md:text-5xl'>Score is: {score}</p> }
 
         {showQuestion1 && <Question1 correctAnswer={Q1Correct} wrongAnswer={Q1Wrong}/> }
         {showQuestion2 && <Question2 correctAnswer={Q2Correct} wrongAnswer={Q2Wrong}/> }

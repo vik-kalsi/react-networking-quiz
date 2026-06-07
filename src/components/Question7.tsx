@@ -8,16 +8,16 @@ function Question7({ correctAnswer, wrongAnswer }:
 
       <div className='border-4 p-4'>
 
-        <div className='w-2xs'>
-          <h1 className='font-bold'>Question 7: Which protocol is used for sending emails?</h1>
+        <div className='w-2xs md:w-xl'>
+          <h1 className='font-bold md:text-4xl'>Question 7: Which protocol is used for sending emails?</h1>
         </div>
 
 
-        <div className='grid mt-3 gap-4'>
-          <button className='border-2 p-1 font-bold cursor-pointer' onClick={correctAnswer}>SMTP</button>
-          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>SNMP</button>
-          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>DHCP</button>
-          <button className='border-2 p-1 font-bold cursor-pointer' onClick={wrongAnswer}>FTP</button>
+        <div className='grid mt-3 gap-4 md:gap-6'>
+          <button className='border-2 p-1 font-bold cursor-pointer md:text-3xl' onClick={correctAnswer}>SMTP</button>
+          <button className='border-2 p-1 font-bold cursor-pointer md:text-3xl' onClick={wrongAnswer}>SNMP</button>
+          <button className='border-2 p-1 font-bold cursor-pointer md:text-3xl' onClick={wrongAnswer}>DHCP</button>
+          <button className='border-2 p-1 font-bold cursor-pointer md:text-3xl' onClick={wrongAnswer}>FTP</button>
         </div>
 
       </div>
