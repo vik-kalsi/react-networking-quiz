@@ -14,10 +14,12 @@ import Question12 from './components/Question12.tsx'
 import Question13 from './components/Question13.tsx'
 import Question14 from './components/Question14.tsx'
 import Question15 from './components/Question15.tsx'
+import TotalScoreComponent from './components/TotalScoreComponent.tsx'
 
 
 function App() {
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState<number>(0);
+  const [showScore, setshowScore] = useState<boolean>(true);
 
   const [showQuestion1, setShowQuestion1] = useState(true)
   const [showQuestion2, setShowQuestion2] = useState(false)
@@ -34,6 +36,7 @@ function App() {
   const [showQuestion13, setShowQuestion13] = useState(false)
   const [showQuestion14, setShowQuestion14] = useState(false)
   const [showQuestion15, setShowQuestion15] = useState(false)
+  const [showTotalScoreComponent, setTotalScoreComponent] = useState(false)
 
 
 
@@ -280,13 +283,15 @@ function App() {
     alert("Correct Answer")
     setScore (score + 1)
     setShowQuestion15(false)
-    //setShowQuestion15(true) ********************************************
+    setshowScore(false)
+    setTotalScoreComponent(true)
   }
 
   let Q15Wrong = () => {
     alert("Wrong Answer")
     setShowQuestion15(false)
-    //setShowQuestion15(true) ********************************************
+    setshowScore(false)
+    setTotalScoreComponent(true)
   }
   //Question 15 #######################################################
 
@@ -296,7 +301,7 @@ function App() {
   return (
     <>
       <div className="grid justify-center my-7 mx-4">
-        <p className='font-bold text-3xl my-4 mx-4'>Score is: {score}</p>
+        {showScore && <p className='font-bold text-3xl my-4 mx-4'>Score is: {score}</p> }
 
         {showQuestion1 && <Question1 correctAnswer={Q1Correct} wrongAnswer={Q1Wrong}/> }
         {showQuestion2 && <Question2 correctAnswer={Q2Correct} wrongAnswer={Q2Wrong}/> }
@@ -313,7 +318,7 @@ function App() {
         {showQuestion13 && <Question13 correctAnswer={Q13Correct} wrongAnswer={Q13Wrong}/> }
         {showQuestion14 && <Question14 correctAnswer={Q14Correct} wrongAnswer={Q14Wrong}/> }
         {showQuestion15 && <Question15 correctAnswer={Q15Correct} wrongAnswer={Q15Wrong}/> }
-        
+        {showTotalScoreComponent && <TotalScoreComponent finalScore={score}/>}
       </div>
       
     </>
